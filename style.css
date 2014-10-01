@@ -37,8 +37,11 @@ h4 {
 	display:inline-block;
 	border-radius: 5px;
 	background-color:#F0EBE6;
+	vertical-align: middle;
+	padding: 0 5px 4px;
 	}
 input,button {
-	border:0;
+	
 	color: #140A00;
+	
 	}
