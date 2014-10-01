@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	
 	$( "#go" ).click(function(e) {
 		e.preventDefault();
 		var numbPre=$("#number").val();
@@ -9,7 +8,6 @@ $(document).ready(function() {
 			$("#number").css("color", "#BD5C5C");
 			} else {
 			var roman="";
-			
 			var unitsArr=["I","V","X"];
 			var tensArr=["X","L","C"];
 			var hundredsArr=["C","D","M"];
@@ -47,7 +45,6 @@ $(document).ready(function() {
 				};
 				return romResult;
 			};
-			
 			var withoutHundreds=totalNumb%100;
 			var withoutTens=withoutHundreds%10;
 			var hundredsQuantity=(totalNumb-withoutHundreds)/100;
@@ -58,8 +55,5 @@ $(document).ready(function() {
 		$("#result").empty();
 		$('#result').append(roman);
 	});
-	
-
-	
 });
 		
